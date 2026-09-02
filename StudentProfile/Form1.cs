@@ -9,7 +9,7 @@ namespace StudentProfile
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Student Profile" , "Kharl Soriano", MessageBoxButtons.OK, MessageBoxIcon.Information); 
+            MessageBox.Show("Student Profile" , "GitHub Beginner Lab", MessageBoxButtons.OK, MessageBoxIcon.Information); 
         }
     }
 }
