@@ -22,7 +22,7 @@ namespace StudentProfile
 
             MessageBox.Show("Git-Hub Beginner Lab", "Student Profile");
 
-            lbl1.Text = "Contact Number: 09171234567";
+           MessageBox.Show("Contact: 09171234567", "Student Profile");
 
         }
     }
