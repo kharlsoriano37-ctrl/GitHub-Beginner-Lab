@@ -28,19 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
+            lbl1 = new Label();
+            btnClick = new Button();
             SuspendLayout();
+            // 
+            // lbl1
+            // 
+            lbl1.AutoSize = true;
+            lbl1.Location = new Point(358, 184);
+            lbl1.Name = "lbl1";
+            lbl1.Size = new Size(50, 20);
+            lbl1.TabIndex = 0;
+            lbl1.Text = "label1";
+            lbl1.Click += label1_Click;
+            // 
+            // btnClick
+            // 
+            btnClick.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnClick.Location = new Point(71, 57);
+            btnClick.Name = "btnClick";
+            btnClick.Size = new Size(204, 68);
+            btnClick.TabIndex = 1;
+            btnClick.Text = "Click Here";
+            btnClick.UseVisualStyleBackColor = true;
+            btnClick.Click += btnClick_Click;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
+            Controls.Add(btnClick);
+            Controls.Add(lbl1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label lbl1;
+        private Button btnClick;
     }
 }
